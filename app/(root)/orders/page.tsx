@@ -1,4 +1,5 @@
-import Search  from '@/components/shared/search'
+
+import Search from '@/components/shared/SearchBar'
 import { getOrdersByEvent } from '@/lib/actions/order.actions'
 import { IOrderItem } from '@/lib/mongodb/models/order.model'
 import { formatDateTime, formatPrice } from '@/lib/utils'
