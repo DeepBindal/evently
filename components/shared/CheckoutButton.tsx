@@ -29,7 +29,7 @@ const CheckoutButton = ({ event }: CheckOutProps) => {
             </Button>
           </SignedOut>
           <SignedIn>
-            <Checkout event={event} userId={userId}/>
+            {!isOrganizer && <Checkout event={event} userId={userId}/>}
           </SignedIn>
         </>
       )}

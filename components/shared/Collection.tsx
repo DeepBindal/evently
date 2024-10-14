@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import { IEvent } from '@/lib/mongodb/models/event.model'
+import Pagination from './Pagination'
 // import Pagination from './Pagination'
 
 type CollectionProps = {
@@ -39,9 +40,9 @@ const Collection = ({
             })}
           </ul>
 
-          {/* {totalPages > 1 && (
+          {totalPages > 1 && (
             <Pagination urlParamName={urlParamName} page={page} totalPages={totalPages} />
-          )} */}
+          )}
         </div>
       ): (
         <div className="flex-center wrapper min-h-[200px] w-full flex-col gap-3 rounded-[14px] bg-grey-50 py-28 text-center">
